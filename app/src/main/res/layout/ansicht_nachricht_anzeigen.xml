@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/nachrichtAnzeigen_scrollBehaelter"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/abc_action_bar_default_height_material"
+            android:clipToPadding="false">
+
+            <!-- Nachrichten Bild mit Anfangsbuchstabe-->
+            <TextView
+                android:id="@+id/nachrichtAnzeigen_nachrichtenBild"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/test_"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="32dp" />
+
+            <!-- Absender der Nachricht -->
+            <TextView
+                android:id="@+id/nachrichtAnzeigen_absender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/nachrichtAnzeigen_nachrichtenBild"
+                android:layout_alignTop="@id/nachrichtAnzeigen_nachrichtenBild"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/nachrichtAnzeigen_nachrichtenBild"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Benutzer Name"
+                android:textSize="14sp" />
+
+            <!-- Betreff der Nachricht-->
+            <TextView
+                android:id="@+id/nachrichtAnzeigen_betreff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nachrichtAnzeigen_nachrichtenBild"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:paddingBottom="5dp"
+                android:singleLine="false"
+                android:text="asdasdasdasd asdasdasdasdas dadasdsssssss wquhqkluwe qouhqweuib qouwhebu"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nachrichtAnzeigen_datum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/nachrichtAnzeigen_betreff"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="Datum der N"
+                android:textSize="10sp" />
+
+            <View
+                android:id="@+id/nachrichtAnzeigen_divisor_kopf"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/nachrichtAnzeigen_datum"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <WebView
+                android:id="@+id/nachrichtAnzeigen_inhalt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nachrichtAnzeigen_divisor_kopf"
+                android:layout_marginBottom="8dp"
+                android:background="?android:attr/windowBackground"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+
+            </WebView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ProgressBar
+        android:id="@+id/nachrichtAnzeigen_ablaufleiste"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="-6dp"
+        android:layout_marginTop="-6dp"
+        android:elevation="4dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/nachrichtAnzeigen_antworten_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="@dimen/fab_elevation"
+        android:src="@drawable/ic_postfach_neue_nachricht"
+        app:fabSize="normal"
+        app:rippleColor="@color/farbe_floatingActionButton_ripple"
+        android:stateListAnimator="@drawable/test"/>
+
+</RelativeLayout>

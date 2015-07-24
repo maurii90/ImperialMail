@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/postfach_layoutgesamt_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:elevation="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/postfach_nachrichtenliste_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingTop="@dimen/abc_action_bar_default_height_material" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <ProgressBar
+            android:id="@+id/postfach_ablaufleiste_progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginTop="-6dp"
+            android:elevation="4dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/postfach_keinenachrichten_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/toolbar"
+            android:gravity="center"
+            android:text="In diesem Ordner befinden sich keine Nachrichten."
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/postfach_neue_nachricht_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:elevation="@dimen/fab_elevation"
+            android:src="@drawable/ic_postfach_neue_nachricht"
+            app:fabSize="normal"
+            app:rippleColor="#F06292"
+            android:stateListAnimator="@drawable/test"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/postfach_navigationscontainer_navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include layout="@layout/navigationsmenu_kopf" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/postfach_navigationfusszeile_navigationview"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            app:itemIconTint="@color/navigationsmenu_schriftfarbe"
+            app:itemTextColor="@color/navigationsmenu_schriftfarbe"
+            app:menu="@menu/navigationsmenu_fusszeile" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/postfach_navigationanzeige_navigationview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="92dp"
+            android:background="@android:color/white"
+            app:itemIconTint="@color/navigationsmenu_schriftfarbe"
+            app:itemTextColor="@color/navigationsmenu_schriftfarbe" />
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

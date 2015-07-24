@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaerFarbe">#607D8B</color>
+    <color name="primaerFarbeDunkel">#546E7A</color>
+    <color name="akzentFarbe_lightBlue500">#03A9F4</color>
+    <color name="akzentFarbe_redA400">#FF1744</color>
+    <color name="akzentFarbe_limeA400">#C6FF00</color>
+    <color name="transparentFarbe">#00000000</color>
+    <color name="material_design_grau700">#616161</color>
+    <color name="farbe_weis">#FFFFFF</color>
+    <color name="farbe_posteingangNeueNachricht">#CCCCFF</color>
+    <color name="farbe_floatingActionButton_ripple">#F06292</color>
+</resources>

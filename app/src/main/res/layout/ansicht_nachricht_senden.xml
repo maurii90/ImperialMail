@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:id="@+id/senden_ansicht_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/senden_ansicht_container_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="@dimen/abc_action_bar_default_height_material">
+
+
+            <ImageButton
+                android:id="@+id/senden_ccbcc_menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/senden_menu_ccbcc_form"
+                android:src="@drawable/ic_menu_oeffnen"
+                android:contentDescription="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/senden_sendenAn_textinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/senden_ccbcc_menu_button"
+                android:paddingLeft="16dp"
+                android:theme="@style/TextInputLayoutStyle_ohneUnterstrich">
+
+                <EditText
+                    android:id="@+id/senden_sendenAn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Senden an:"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/senden_cc_textinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/senden_sendenAn_textinputlayout"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:theme="@style/TextInputLayoutStyle_ohneUnterstrich"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/senden_cc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Cc:"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/senden_bcc_textinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/senden_cc_textinputlayout"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:theme="@style/TextInputLayoutStyle_ohneUnterstrich"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/senden_bcc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bcc:"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/senden_betreff_textinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/senden_bcc_textinputlayout"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:theme="@style/TextInputLayoutStyle_ohneUnterstrich">
+
+                <EditText
+                    android:id="@+id/senden_betreff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Betreff:"
+                    android:textSize="14sp"
+                    android:inputType="textEmailSubject"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:id="@+id/senden_divisor_kopf"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/senden_betreff_textinputlayout"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/senden_inhalt_nachricht"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/senden_divisor_kopf"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:editable="true"
+                android:gravity="top|left"
+                android:hint="Schreiben Sie eine Nachricht .."
+                android:singleLine="false"
+                android:minLines="15"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

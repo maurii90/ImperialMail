@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NoNameMail</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- LoginAutomatisch Fehlernachrichten -->
+    <string name="login_fehlernachricht_email">Keine gültige E-Mail Adresse!</string>
+    <string name="login_fehlernachricht_eingabe">Benutzername oder Password inkorrekt.</string>
+
+    <!-- Dialog keine Verbindung -->
+    <string name="dialog_keine_verbindung_titel">Kein Internetverbindung</string>
+    <string name="dialog_keine_verbindung_nachricht">Keine Internetverbindung gefunden. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.</string>
+    <string name="dialog_keine_verbindung_positiveTaste">Ok</string>
+
+    <!-- Progress Dialog message strings -->
+    <string name="ablaufDialog_lade_ispDaten_nachricht">Provider Daten ermitteln ..</string>
+    <string name="ablaufDialog_authentifizierung_nachricht">Authentifizierung ..</string>
+    <!--<string name="pd_loadInbox_message">Posteingang laden ..</string>-->
+
+    <!-- Nevigationsmenu -->
+    <string name="navigationsmenu_offen"></string>
+    <string name="navigationsmenu_geschlossen"></string>
+    <string name="navigationsmenu_eigeneOrdner_titel">Eigene Ordner</string>
+
+    <!-- Navigationsmenu Elementnamen-->
+    <string name="ordnerName_posteingang">Posteingang</string>
+    <string name="ordnerName_postausgang">Postausgang</string>
+    <string name="ordnerName_ungelesen">Ungelesen</string>
+    <string name="ordnerName_geloescht">Gelöscht</string>
+    <string name="ordnerName_gesendet">Gesendet</string>
+    <string name="ordnerName_entwuerfe">Entwürfe</string>
+
+</resources>

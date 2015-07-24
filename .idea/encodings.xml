@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/de/htwg/masilipo/nonamemail/ChooseMail.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/de/htwg/masilipo/nonamemail/applikation/LoginAutomatisch.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/de/htwg/masilipo/nonamemail/applikation/Postfach.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/de/htwg/masilipo/nonamemail/modell/AccountAuthentifizierung.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/de/htwg/masilipo/nonamemail/modell/AufgabenErgebnis.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/de/htwg/masilipo/nonamemail/werkzeug/DatenAusISPDB.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/de/htwg/masilipo/nonamemail/werkzeug/ImapServerAnfragenAsyncTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/gmx_logo.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/gmx_logo_white.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/google_logo.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/outlook_logo.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/yahoo_logo.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/__activity_choose_mail.xml" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

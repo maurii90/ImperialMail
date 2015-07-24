@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/login_scroll_ansicht"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/htwg_konstanz_logo" />
+
+            <android.support.v7.widget.CardView xmlns:cardview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/login_formular_cardview"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                cardview:cardBackgroundColor="#5DFFFFFF"
+                cardview:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@android:color/darker_gray"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal"
+                        android:paddingTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/login_email_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|left"
+                            android:paddingBottom="20dp"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/ic_action_user" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/login_email_textinputlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:theme="@style/TextInputLayoutStyle">
+
+                            <EditText
+                                android:id="@+id/login_email_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="E-Mail"
+                                android:inputType="textEmailAddress" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/login_passwort_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|left"
+                            android:paddingBottom="20dp"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/ic_action_password" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/til_passwort_textinputlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:theme="@style/TextInputLayoutStyle">
+
+                            <EditText
+                                android:id="@+id/login_passwort_edittext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:inputType="textPassword" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/darker_gray"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="IMAP - Eingangsserver Daten: "
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+
+                            <!--App icons by <a href="http://icons8.com/android-icons">Icons8.com</a>.-->
+                            <ImageView
+                                android:id="@+id/login_eingangsserverAdresse_imageview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:paddingBottom="20dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_login_serveradresse" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/login_eingangsserverAdresse_textinputlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:theme="@style/TextInputLayoutStyle">
+
+                                <EditText
+                                    android:id="@+id/login_eingangsserverAdresse_edittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:hint="Adresse"
+                                    android:singleLine="true"/>
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                            <!--App icons by <a href="http://icons8.com/android-icons">Icons8.com</a>.-->
+                            <ImageView
+                                android:id="@+id/login_eingangsserverPort_imageview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|left"
+                                android:paddingBottom="20dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_login_serverport" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/til_eingangsserverPort_textinputlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:theme="@style/TextInputLayoutStyle">
+
+                                <EditText
+                                    android:id="@+id/login_eingangsserverPort_edittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Port (993)"
+                                    android:inputType="number" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/darker_gray"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="IMAP - Ausgangsserver Daten: "
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:orientation="horizontal">
+
+                            <!--App icons by <a href="http://icons8.com/android-icons">Icons8.com</a>.-->
+                            <ImageView
+                                android:id="@+id/login_ausgangsserverAdresse_imageview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:paddingBottom="20dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_login_serveradresse" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/login_ausgangsserverAdresse_textinputlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:theme="@style/TextInputLayoutStyle">
+
+                                <EditText
+                                    android:id="@+id/login_ausgangsserverAdresse_edittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:hint="Adresse"
+                                    android:singleLine="true"/>
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                            <!--App icons by <a href="http://icons8.com/android-icons">Icons8.com</a>.-->
+                            <ImageView
+                                android:id="@+id/login_ausgangsserverPort_imageview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|left"
+                                android:paddingBottom="20dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_login_serverport" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/til_ausgangsserverPort_textinputlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:theme="@style/TextInputLayoutStyle">
+
+                                <EditText
+                                    android:id="@+id/login_ausgangsserverPort_edittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Port (465)"
+                                    android:inputType="number" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/login_abschicken_button"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="30dp"
+                        android:text="EINLOGGEN"
+                        android:textColor="@color/akzentFarbe_lightBlue500"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/login_ablaufDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/login_ablaufDialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ablaufDialog"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:text="Das is"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:visibility="gone" />
+</RelativeLayout>

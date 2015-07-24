@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Themes for Android API21 -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:colorPrimary">@color/primaerFarbe</item>
+        <item name="android:colorPrimaryDark">@color/primaerFarbeDunkel</item>
+        <item name="android:colorAccent">@color/akzentFarbe_lightBlue500</item>
+        <item name="android:colorControlActivated">@color/akzentFarbe_lightBlue500</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+    </style>
+
+</resources>

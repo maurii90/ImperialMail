@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <!-- Nachrichten Bild mit Anfangsbuchstabe-->
+    <TextView
+        android:id="@+id/listenzeile_nachrichtenBild"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/test_"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="32dp" />
+
+    <!-- Datum des Erhalts der Nachricht-->
+    <TextView
+        android:id="@+id/listenzeile_datum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/listenzeile_nachrichtenBild"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="16dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentEnd="true"
+        android:text="asdasd"/>
+
+    <!-- Absender der Nachricht -->
+    <TextView
+        android:id="@+id/listenzeile_absender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/listenzeile_nachrichtenBild"
+        android:layout_toLeftOf="@id/listenzeile_datum"
+        android:layout_alignTop="@id/listenzeile_nachrichtenBild"
+        android:layout_marginLeft="16dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/abc_text_size_title_material" />
+
+
+    <!-- Divisor zwischen Absender und Betreff-->
+    <View
+        android:id="@+id/listenzeile_divisor"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/listenzeile_nachrichtenBild"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Betreff der Nachricht-->
+    <TextView
+        android:id="@+id/listenzeile_betreff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/listenzeile_nachrichtenBild"
+        android:layout_alignBottom="@id/listenzeile_nachrichtenBild"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"/>
+
+    <!-- Divisor am Ende der Zeile-->
+    <View
+        android:id="@+id/listenzeile_divisor_ende"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

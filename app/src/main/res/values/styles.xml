@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaerFarbe</item>
+        <item name="colorPrimaryDark">@color/primaerFarbeDunkel</item>
+        <item name="colorAccent">@color/akzentFarbe_lightBlue500</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/farbe_weis</item>
+    </style>
+
+    <style name="toolbar_theme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="ProgressDialogStyle">
+        <item name="android:bottomBright">@color/transparentFarbe</item>
+        <item name="android:bottomDark">@color/transparentFarbe</item>
+        <item name="android:bottomMedium">@color/transparentFarbe</item>
+        <item name="android:centerBright">@color/transparentFarbe</item>
+        <item name="android:centerDark">@color/transparentFarbe</item>
+        <item name="android:centerMedium">@color/transparentFarbe</item>
+        <item name="android:fullBright">@color/transparentFarbe</item>
+        <item name="android:fullDark">@color/transparentFarbe</item>
+        <item name="android:topBright">@color/transparentFarbe</item>
+        <item name="android:topDark">@color/transparentFarbe</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TextInputLayoutStyle">
+        <item name="android:colorControlNormal">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/black</item>
+    </style>
+
+    <style name="TextInputLayoutStyle_ohneUnterstrich">
+        <item name="android:colorControlNormal">@android:color/transparent</item>
+    </style>
+</resources>
